@@ -47,12 +47,10 @@ body
     background-repeat: repeat;
     position: 50% 0;
     background-attachment: fixed;
-    /* height: calc(100vh-25px); */
     align-items: center;
     justify-self: center;
     justify-content: center;
     z-index: 10;
-    /* background-color: var(--bs-gradient(45deg, rgba(61, 67, 77, 0.15), rgba(255, 255, 255, 0))); */
 }
 
 /* Navigation bar */
@@ -138,6 +136,8 @@ body
     margin-right: auto;
     outline: 1px solid red;
 }
+
+/* Button CSS */
 .btn-group
 {
     flex: 1 1 auto;
@@ -147,13 +147,33 @@ body
 .btn-primary
 {
     background-image: url(../images/purpleGradientBackground.png);
-    border-color: #750909;
+    border-color: #DAE1E9;
+    outline: 1px solid red;
 }
 .btn-primary:hover
 {
-    background-color: #1c1c1c;
-    border-color: #750909;
+    background-image: url(../images/gradientLightVertical.png);
+    color: #330099;
+    border-color: #DAE1E9;
+    outline: 1px solid red;
 }
+.btn-primary:link 
+{
+    color: #DAE1E9;
+    font-size: 18px;
+    outline: 1px solid red;
+}
+  .btn-primary:visited {
+    color: #DAE1E9;
+    text-decoration: none;
+    outline: 1px solid red;
+  }
+  .btn-primary:active {
+    color: #DAE1E9;
+    text-decoration: none;
+    outline: 1px solid red;
+  }
+
 .carousel
 {
     margin: 20px auto;
