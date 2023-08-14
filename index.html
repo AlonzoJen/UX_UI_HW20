@@ -4,7 +4,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
+
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
@@ -12,50 +12,145 @@
 
     <title>UX/UI Homework 20</title>
 </head>
-<body>
+<body class="d-flex flex-column h-100">
 
-    <!-- Navigation Bar -->
-    <!-- <nav class="navbar navbar-light bg-dark customNav">
-        <a class="navbar-brand" href="#"><img src="images/ruby_Diamond Grayscale.svg" width="50" height="50"></a>
-        <ul class="nav justify-content-end">
-        <li class="nav-item"><a class="nav-link active" href="#">About Me</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">My Portfolio</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Contact Me</a></li>
-        <li class="nav-item"><a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a></li>
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark customNav">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <a class="navbar-brand" href="#"><img src="images/navLogo.png" alt="logo image" width="200px"></a>
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">About Me</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">My Portfolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contact Me</a></li>
         </ul>
-    </nav> -->
-
-    <nav class="navbar navbar-expand-lg navbar-dark customNav">
-        <div class="container-fluid">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-            <a class="navbar-brand" href="#"><img src="images/navLogo.png" alt="logo image" width="200px"></a>
-            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-              <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">About Me</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">My Portfolio</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">Contact Me</a></li>
-            </ul>
-          </div>
-        </div>
-    </nav>
+      </div>
+    </div>
+  </nav>
 
 
     <!-- Hero Section -->
-    <div 
-    class="heroHead"
-    style="background-image: url(./images/ccHeroImage2.png);">
-    <div class="color-overlay d-flex justify-content-center align-items-center">
-        <h1>Compass Connections Redesign</h1></div>
-
+    <div class="heroHead" style="background-image: url(./images/ccHeroImage2.png);">
+      <div class="color-overlay d-flex justify-content-center align-items-center">
+        <h1>Compass Connections Redesign</h1>
+      </div>
     </div>
 
 
-    <!-- Project Introduction -->
+  <!-- Begining of Case Study Content -->
+
+  <div class="container my-5 projectOverview-container">
+    <div class="p-5 text-center rounded-3 projectOverview-card">
+      <img bi mt-4 mb-3 src="images/designProcessCC.png" width="200" height="200">
+      <h1 class="text-body-emphasis">Project Overview</h1>
+      <p class="col-lg-8 mx-auto fs-5 text-muted">
+        This is a custom jumbotron featuring an SVG image at the top, some longer text that wraps early thanks to a responsive <code>.col-*</code> class, and a customized call to action.
+      </p>
+      <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="imageOverview" src="images/designProcess.png" width="100%" height="100%">
+          </div>
+          <div class="carousel-item">
+            <img class="imageOverview" src="images/designTimeline.png" width="100%" height="100%">
+          </div>
+          <div class="carousel-item">
+            <img class="imageOverview" src="images/myRole.png" width="100%" height="100%">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </div>
+  
+
+  
+  <div class="container marketing">
+
+    <!-- Three columns of text below the carousel -->
+    <div class="row">
+      <div class="col-lg-4">
+        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
+        <h2 class="fw-normal">Heading</h2>
+        <p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
+        <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
+        <h2 class="fw-normal">Heading</h2>
+        <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>
+        <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
+        <h2 class="fw-normal">Heading</h2>
+        <p>And lastly this, the third column of representative placeholder content.</p>
+        <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
 
 
+    <!-- START THE FEATURETTES -->
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading fw-normal lh-1">First featurette heading. <span class="text-body-secondary">It’ll blow your mind.</span></h2>
+        <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting prose here.</p>
+      </div>
+      <div class="col-md-5">
+        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"/><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">500x500</text></svg>
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading fw-normal lh-1">Oh yeah, it’s that good. <span class="text-body-secondary">See for yourself.</span></h2>
+        <p class="lead">Another featurette? Of course. More placeholder content here to give you an idea of how this layout would work with some actual real-world content in place.</p>
+      </div>
+      <div class="col-md-5 order-md-1">
+        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"/><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">500x500</text></svg>
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading fw-normal lh-1">And lastly, this one. <span class="text-body-secondary">Checkmate.</span></h2>
+        <p class="lead">And yes, this is the last block of representative placeholder content. Again, not really intended to be actually read, simply here to give you a better view of what this would look like with some actual content. Your content.</p>
+      </div>
+      <div class="col-md-5">
+        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"/><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">500x500</text></svg>
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <!-- /END THE FEATURETTES -->
+
+  </div><!-- /.container -->
     
+
+
     <!-- User Research Section -->
     <div class="container">
         <!-- Content here -->
@@ -100,53 +195,50 @@
     </div>
 
 
-    <!-- Footer Option 1 
-    <div class="footer-container">
-    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-        <div class="col-md-4 d-flex align-items-center">
-            <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
-            <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
-            </a>
-            <span class="text-muted">© 2021 Company, Inc</span>
-        </div>
-        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-            <li class="ms-3"><a class="text-muted" href="#https://www.linkedin.com/in/jeanette-alonzo-uxui/"><img src="images/linkedin-box-fill.png" alt="linkedIn logo" height="36px" width="36px"></a></li>
-            <li class="ms-3"><a class="text-muted" href="##https://twitter.com/home"><img src="images/twitter-fill.png" alt="twitter logo" height="36px" width="36px"></a></li>
-            <li class="ms-3"><a class="text-muted" href="#jalonzo0722@gmail.com"><img src="images/mail-send-fill.png" alt="email logo" height="36px" width="36px"></a></li>
-    </footer>
-    </div> -->
+  <!-- Footer Section -->
 
-    <!-- Footer Option 2 
-    <div class="footer-container">
-    <footer class="py-3 my-4">
-        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-            <li class="ms-3"><a class="text-muted" href="#https://www.linkedin.com/in/jeanette-alonzo-uxui/"><img src="images/linkedin-box-fill.png" alt="linkedIn logo" height="36px" width="36px"></a></li>
-            <li class="ms-3"><a class="text-muted" href="##https://twitter.com/home"><img src="images/twitter-fill.png" alt="twitter logo" height="36px" width="36px"></a></li>
-            <li class="ms-3"><a class="text-muted" href="#jalonzo0722@gmail.com"><img src="images/mail-send-fill.png" alt="email logo" height="36px" width="36px"></a></li>
-        </ul>
-        <img class="img-center" src="images/copyrightTagline.png" alt="tagline" width="300px" height="40px">
-      </footer>
-    </div> -->
+  <!-- Footer Logo & Icon Declarations -->
+  <svg class="d-none secondary2" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="jaDesigns" viewBox="0 0 118 94">
+      <title>jaDesigns</title>
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M44.8242 18.6492C60.6372 11.9964 77.3329 12.2895 83.315 20.7863C86.401 25.1696 86.7134 31.5377 84.8325 38.4688C84.833 38.5111 84.8318 38.5538 84.8288 38.5967L81.7926 81.5915C81.7388 82.3536 81.1265 82.9569 80.3634 82.9998L35.3262 85.5289C35.2264 85.5345 35.128 85.5303 35.032 85.517C27.6804 86.8531 21.3254 85.4417 17.5306 80.9791C13.2921 74.9588 12.802 62.2615 16.4283 49.9888L16.3729 49.6981L16.846 48.6341C18.0801 44.7933 19.7214 41.0201 21.7813 37.5344L23.2049 34.3327L25.1464 32.6C27.3343 29.8198 29.8531 27.3487 32.7109 25.3385C33.4684 24.8056 34.2365 24.2908 35.0137 23.794L38.5022 20.6807L44.8242 18.6492ZM19.1365 64.2004L17.0519 67.3259C16.968 64.2213 17.2193 60.8237 17.8263 57.3249L19.1365 64.2004ZM41.1936 57.8987L62.1944 64.5984L56.6414 43.6765L41.1936 57.8987ZM39.1914 24.8122C40.1591 24.2582 41.1376 23.7327 42.1237 23.2362L54.4704 19.2687L61.0504 23.8219L56.4961 38.9965L37.2667 56.7003L22.0842 60.746L20.06 50.1238L26.1324 36.4667L39.1914 24.8122ZM81.1348 47.8047C77.716 54.4203 72.6381 60.9833 66.3603 66.3678C66.3265 66.4023 66.2927 66.4369 66.2588 66.4713C66.22 66.5109 66.1811 66.5504 66.1422 66.5899L79.0204 77.7462L81.1348 47.8047ZM61.8723 70.5629C56.7105 75.4866 51.1802 79.2984 45.7748 81.9024L77.1483 80.1406L63.9548 68.711C63.2749 69.3412 62.5812 69.9582 61.8723 70.5629ZM52.7512 73.5693C50.1875 75.2316 47.414 76.8047 44.3814 78.316C41.2745 79.6317 37.8156 80.6857 33.8416 81.5354L39.813 60.644L59.8912 67.0494C57.5781 69.5833 55.2433 71.7343 52.7512 73.5693ZM65.614 23.0397L67.7301 24.8119L80.5484 34.5081C82.1462 29.711 82.4028 26.7176 81.547 24.647C80.6569 22.4934 78.3329 20.8521 73.3256 19.3691L65.614 23.0397ZM65.8378 27.1865L64.3776 26.0819L61.0412 37.9398L78.2318 37.5663L65.8378 27.1865ZM63.23 20.813L66.3382 19.3335L67.5481 18.5822L59.8613 18.6778L63.23 20.813ZM64.8719 62.8509L59.4588 42.4564L79.2355 41.6327C74.2193 51.2015 71.2371 56.2466 64.8719 62.8509ZM29.5127 79.1152L23.6109 64.7358L35.4144 61.0487L29.5127 79.1152ZM18.1265 71.1861C18.9609 75.3925 19.9108 77.805 21.2558 79.1886C22.2582 80.2198 23.633 80.8214 25.8505 80.9699L20.2747 67.9651L18.1265 71.1861Z" fill="#FAFAFF"/>
+    </symbol>
+    <symbol id="linkedIn" viewBox="0 0 48 48">
+      <g clip-path="url(#clip0_463_217)"><path d="M36.67 36.678H31.34V28.324C31.34 26.332 31.3 23.768 28.56 23.768C25.782 23.768 25.358 25.936 25.358 28.178V36.678H20.026V19.5H25.146V21.84H25.216C25.932 20.492 27.672 19.066 30.272 19.066C35.672 19.066 36.672 22.622 36.672 27.248V36.678H36.67ZM14.006 17.15C13.5991 17.1505 13.1961 17.0707 12.8201 16.9152C12.4441 16.7597 12.1025 16.5315 11.8149 16.2437C11.5273 15.9559 11.2993 15.6141 11.144 15.238C10.9887 14.8619 10.9092 14.4589 10.91 14.052C10.9104 13.4397 11.0924 12.8412 11.4329 12.3323C11.7734 11.8234 12.2572 11.4269 12.8231 11.1929C13.3889 10.9589 14.0115 10.898 14.612 11.0179C15.2124 11.1377 15.7639 11.4329 16.1966 11.8662C16.6293 12.2995 16.9238 12.8513 17.0429 13.452C17.162 14.0526 17.1003 14.6751 16.8656 15.2406C16.6309 15.8062 16.2337 16.2895 15.7244 16.6293C15.215 16.9692 14.6163 17.1504 14.004 17.15H14.006ZM16.678 36.678H11.332V19.5H16.68V36.678H16.678ZM39.34 6H8.658C7.186 6 6 7.16 6 8.594V39.406C6 40.84 7.188 42 8.656 42H39.332C40.8 42 42 40.84 42 39.406V8.594C42 7.16 40.8 6 39.332 6H39.338H39.34Z" fill="#FAFAFF"/></g>
+      <defs><clipPath id="clip0_463_217"><rect width="48" height="48" fill="white"/></clipPath></defs>      
+    </symbol>
+    <symbol id="twitter" viewBox="0 0 48 48">
+      <g clip-path="url(#clip0_463_221)"><path d="M44.324 11.3119C42.7971 11.9872 41.1779 12.4308 39.52 12.6279C41.2675 11.5827 42.5754 9.93788 43.2 7.99985C41.56 8.97585 39.762 9.65985 37.888 10.0299C36.6292 8.68301 34.9607 7.78978 33.1419 7.48902C31.3231 7.18827 29.4559 7.49684 27.8305 8.36676C26.2052 9.23668 24.9128 10.6192 24.1542 12.2994C23.3957 13.9797 23.2135 15.8634 23.636 17.6579C20.3102 17.4912 17.0566 16.6269 14.0866 15.1212C11.1165 13.6155 8.49624 11.5019 6.39598 8.91785C5.65256 10.1948 5.26189 11.6463 5.26398 13.1239C5.26398 16.0239 6.73998 18.5859 8.98398 20.0859C7.656 20.044 6.35725 19.6854 5.19598 19.0399V19.1439C5.19638 21.0753 5.86472 22.9471 7.08768 24.442C8.31064 25.9369 10.0129 26.9628 11.906 27.3459C10.6732 27.6799 9.3806 27.7292 8.12598 27.4899C8.65972 29.1523 9.7 30.6063 11.1012 31.6481C12.5023 32.6899 14.1942 33.2674 15.94 33.2999C14.2049 34.6625 12.2183 35.6698 10.0937 36.2642C7.96915 36.8586 5.74824 37.0284 3.55798 36.7639C7.38138 39.2227 11.8322 40.5281 16.378 40.5239C31.764 40.5239 40.178 27.7779 40.178 16.7239C40.178 16.3639 40.168 15.9999 40.152 15.6439C41.7897 14.4602 43.2032 12.9939 44.326 11.3139L44.324 11.3119Z" fill="#FAFAFF"/></g>
+      <defs><clipPath id="clip0_463_221"><rect width="48" height="48" fill="white"/></clipPath></defs>
+    </symbol>
+    <symbol id="email" viewBox="0 0 48 48">
+      <g clip-path="url(#clip0_463_225)"><path d="M4 11V7.986C4.00366 7.46076 4.2138 6.95803 4.58503 6.58644C4.95625 6.21484 5.45876 6.00419 5.984 6H42.016C43.112 6 44 6.89 44 7.986V40.014C43.9963 40.5392 43.7862 41.042 43.415 41.4136C43.0438 41.7852 42.5412 41.9958 42.016 42H5.984C5.45763 41.9995 4.95299 41.79 4.58098 41.4176C4.20896 41.0452 4 40.5404 4 40.014V38H40V14.6L24 29L4 11ZM0 20H10V24H0V20ZM0 30H16V34H0V30Z" fill="#FAFAFF"/></g>
+      <defs><clipPath id="clip0_463_225"><rect width="48" height="48" fill="white"/></clipPath></defs>
+    </symbol>
+  </svg>
 
-    <!-- Footer Option 3 -->
-    <footer class="d-flex flex-wrap justify-content-between  align-items-center py-5 myFooter">
-        <p class="col-md-4 mb-0">© 2023  |  JA Designs <img src="images/Logo_Ruby.png" alt="white jewel" height="25" width="25"></p>
-        <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
-            <img class="bi me-2" src="images/copyrightTagline.png" width="300px" height="40px">
-        </a>
-        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-            <li class="ms-3"><a href="#https://www.linkedin.com/in/jeanette-alonzo-uxui/" target="_blank"><img src="images/linkedin-box-fill.png" alt="linkedIn logo" height="36px" width="36px"></a></li>
-            <li class="ms-3"><a href="##https://twitter.com/home" target="_blank"><img src="images/twitter-fill.png" alt="twitter logo" height="36px" width="36px"></a></li>
-            <li class="ms-3"><a href="#jalonzo0722@gmail.com"><img src="images/mail-send-fill.png" alt="email logo" height="36px" width="36px"></a></li>
-        </ul>
-    </footer>
+  <!-- Footer Container -->
+  <footer class="footer mt-auto py-3 d-flex flex-wrap justify-content-center">
+    <div class="col-md-4 d-flex align-items-center">
+      <a href="/" class="mb-3 me-2 mb-md-0 secondary2 text-decoration-none lh-1">
+        <svg class="bi" width="30" height="24"><use xlink:href="#jaDesigns"/></svg>
+      </a>
+      <span class="mb-3 mb-md-0 secondary2">&copy; 2023 JA Designs</span>
+    </div>
 
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+      <li class="ms-3"><a class="secondary2" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#linkedIn"/></svg></a></li>
+      <li class="ms-3"><a class="secondary2" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"/></svg></a></li>
+      <li class="ms-3"><a class="secondary2" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#email"/></svg></a></li>
+    </ul>
+  </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-<script src="js/index.js"></script>  
+<script src="js/index.js"></script>
 </html>
